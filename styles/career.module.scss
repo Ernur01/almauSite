@@ -1,0 +1,223 @@
+@import 'template/template.model'; 
+
+$blue_color: #13447E;
+$red_color: #FF0000;
+$color_black: #000000;
+$dark_blue: #012351;
+$button_color: #D60945;
+;
+
+
+@mixin h1{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    color: $blue_color;
+    width: 100%;
+    margin: 0;
+}
+
+/* FIRST BLOCK */
+.first_block_container{
+    max-width: 1080px;
+    width: 100%;
+    height: 1267px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    h1{
+        @include h1; 
+        text-align: center;  
+        margin-top: 120px;
+        margin-bottom: 50px; 
+    }
+    .fb_text{
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 150%;
+        color: #3C3C3C;
+        margin-bottom: 50px; 
+    }
+}
+
+.card{
+    background: #FDFDFD;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    height: 386px;
+    
+    p,h5{
+        margin: 0;
+    }
+    .card_md_text{
+        font-size: 18px;
+        max-width: 490px;
+        width: 100%;
+        //margin: 61px 0 66px 0;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 550px;
+        width: 100%;
+    }
+}
+
+.card_header_title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    width: 357px;
+    span{
+        color: #F2994A;
+    }
+}
+
+.card_subtitle{
+    color: #13447E;
+    font-size: 20px;
+    line-height: 180%;
+    padding-bottom: 5px;
+}
+
+.card_light_text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8F8F8F;
+    text-align: center;
+}
+
+.card_button{
+    @include button(5px, 135px, 44px, #FFFFFF, 500, 14px);
+    background-color: $button_color;
+    &:hover{
+        color: white;
+    }
+}
+
+/* SECOND BLOCK */
+
+.second_block{
+    background-color: #F5F5F6;
+    .second_block_container{
+        max-width: 1080px;
+        width: 100%;
+        height: 353px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.second_block_container{
+    h1,h5,p{
+        margin: 0;
+    }
+    h1{
+        @include h1;
+        margin-top: 20px;
+    }
+}
+
+.sb_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 138px;
+    margin-top: 43px;
+    div{
+        max-width: 258px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    h5{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 150%;
+    }
+    p{
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+    .first_block_container{
+       max-width: 650px;
+       height: 1672px;     
+    }
+    .second_block_container{
+        max-width: 670px !important;
+    }
+    .sb_content{
+        h5{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 426px) {
+    .first_block_container{
+        max-width: 350px;
+        height: 1631px; 
+        h1{
+            font-size: 18px;
+        } 
+        .fb_text{
+            font-size: 16px;
+        }   
+    }
+    
+    .card{
+        width: 354px;
+        height: 366px;
+        .card_md_text{
+            font-size: 16px;
+        }
+    }
+    
+    /* SECOND BLOCK */
+
+    .second_block_container{
+        max-width: 350px !important;
+        height: 461px !important;
+        h1{
+            font-size: 18px;
+        }
+    }
+
+    .sb_content{
+        height: 341px !important;
+        flex-direction: column;
+        align-items: flex-start;
+        h5{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+}

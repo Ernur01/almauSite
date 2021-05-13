@@ -1,0 +1,14 @@
+
+/* Mixin */
+@mixin button($border_radius, $width, $height, $color, $font_weight, $font_size){
+    border-radius: $border_radius;
+    width: $width;
+    height: $height;
+    color: $color;
+    font-weight: $font_weight;
+    font-size: $font_size;
+    display: block;
+    text-align: center;
+    line-height: $height;
+    text-decoration: none;
+}

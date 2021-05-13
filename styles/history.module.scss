@@ -1,0 +1,128 @@
+
+
+
+.welcome {
+    background: url("/history/firstBlock.svg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+
+.introduction a {
+    font-weight: bolder;
+}
+
+.future {
+    color: red;
+}
+
+.span {
+    border: 1px solid #004282;
+    height: 12190px;
+    margin-left: 555px;
+    position: absolute;
+    z-index: -1;
+}
+
+.span1 {
+    border: 1px solid #004282;
+    position: absolute;
+    transform: rotate(90deg);
+    height: 220px;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
+.span2 {
+    border: 1px solid #004282;
+    position: absolute;
+    transform: rotate(90deg);
+    height: 180px;
+    margin-left: 390px;
+    margin-top: 33px;
+}
+
+.years {
+    position: absolute;
+    height: 0px;
+    transform: translateY(30%);
+    margin-left: -70px;
+}
+
+.years img {
+    /* position: absolute; */
+    transform: translateY(130%);
+    margin-left: -40px;
+    margin-top: 150px;
+}
+
+.year_little {
+    margin-bottom: 95px;
+    color: #014383;
+    font-size: 18px;
+}
+
+.span4 {
+    border: 1px solid #014383;
+    position: absolute;
+    height: 80px;
+    transform: translateY(-110%);
+    margin-left: 18px;
+}
+
+.year {
+    position: absolute;
+    transform: translateY(205%);
+    margin-left: 225px;
+}
+
+.yearleft {
+    position: absolute;
+    transform: translateY(205%);
+    margin-left: 245px;
+}
+
+.year h4,
+.yearleft h4 {
+    color: #004282;
+    font-size: 36px;
+}
+
+.introduction img {
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.introduction .col_lg_6 {
+    text-align: center;
+}
+
+.introduction a {
+    color: #131313;
+    font-size: 20px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: #ff0000 1px solid;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 214px;
+    margin-left: -15px;
+    transform: translateX(100%);
+    z-index: 999;
+}
+
+.circleLeft {
+    width: 10px;
+    height: 10px;
+    border: #ff0000 1px solid;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -6px;
+    margin-left: -15px;
+    transform: translateX(100%);
+    z-index: 999;
+}
