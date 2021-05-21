@@ -1,3 +1,6 @@
+$blue_color: #13447E;
+$red_color: #FF0000;
+
 
 /* Mixin */
 @mixin button($border_radius, $width, $height, $color, $font_weight, $font_size){
@@ -11,4 +14,13 @@
     text-align: center;
     line-height: $height;
     text-decoration: none;
+}
+
+@mixin h1{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    color: $blue_color;
+    width: 100%;
+    margin: 0;
 }

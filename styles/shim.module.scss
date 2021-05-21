@@ -1,0 +1,60 @@
+@import 'template/template.model'; 
+
+$color_black: #000000;
+$dark_blue: #012351;
+$button_color: #D60945;
+
+
+.first_block_container{
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    p{
+        text-align: center;
+        width: 64px;
+        height: 15px;
+        font-size: 16px;    
+        color: #004282;
+        &:hover{
+            cursor: pointer;
+            color: #ED1C24;
+            transition: .1s linear;
+        }
+    }
+}
+
+.fb_nav_left, .fb_nav_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb_nav_left{
+    width: 204px;
+}
+.fb_nav_right{
+    width: 282px;
+}
+
+
+/* SECOND BLOCK */
+.second_block{
+    background: url("/mainPage/firstBlockBG.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

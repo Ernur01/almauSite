@@ -1,0 +1,22 @@
+@import 'template/template.model'; 
+
+$blue_color: #004282;
+$red_color: #FF0000;
+
+
+.first_block{
+    padding-top: 60px;
+    .first_block_container{
+        height: 1432px;
+        max-width: 1260px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.first_block_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

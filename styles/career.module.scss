@@ -5,7 +5,7 @@ $red_color: #FF0000;
 $color_black: #000000;
 $dark_blue: #012351;
 $button_color: #D60945;
-;
+
 
 
 @mixin h1{
@@ -173,6 +173,9 @@ $button_color: #D60945;
         p{
             font-size: 16px;
         }
+    }
+    .card{
+        padding: 20px;
     }
 }
 
